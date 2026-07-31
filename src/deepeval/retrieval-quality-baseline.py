@@ -9,7 +9,7 @@ from deepeval import evaluate
 
 def create_rag_system(chunk_size=1000, chunk_overlap=200, k=3):
   """Create a RAG system with configurable parameters."""
-  loader = PyPDFLoader("./arXiv-jnyman-051011v3.pdf")
+  loader = PyPDFLoader("./warp_drive.pdf")
   documents = loader.load()
 
   text_splitter = RecursiveCharacterTextSplitter(
@@ -28,7 +28,7 @@ def create_rag_system(chunk_size=1000, chunk_overlap=200, k=3):
 
 def create_rag_system_semantic(k=3):
   """Create a RAG system with semantically-aware chunking."""
-  loader = PyPDFLoader("./arXiv-jnyman-051011v3.pdf")
+  loader = PyPDFLoader("./warp_drive.pdf")
   documents = loader.load()
 
   # Use separators that respect document structure

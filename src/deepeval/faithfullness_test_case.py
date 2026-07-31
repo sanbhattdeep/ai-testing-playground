@@ -6,7 +6,7 @@ from deepeval.metrics import FaithfulnessMetric
 from deepeval.models import OllamaModel
 from deepeval.test_case import LLMTestCase
 
-loader = PyPDFLoader("./arXiv-jnyman-051011v3.pdf")
+loader = PyPDFLoader("./warp_drive.pdf")
 documents = loader.load()
 
 # Split into chunks
