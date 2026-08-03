@@ -116,23 +116,23 @@ print(f"Document split into {num_chunks} chunks\n")
 # =========================================================
 # TEST: Specific Factual Query (like Part 2's energy question)
 # =========================================================
-# print("=" * 60)
-# print("TEST: Specific Factual Query - Power-law Exponent")
-# print("=" * 60)
+print("=" * 60)
+print("TEST: Specific Factual Query - Power-law Exponent")
+print("=" * 60)
 
-# question = """What is the power-law exponent for the extinction
-# distribution in Jeff Nyman's extinction model?"""
+question = """What is the power-law exponent for the extinction
+distribution in Jeff Nyman's extinction model?"""
 
-# expected = """The power-law exponent α is 2.183±0.007, meaning the
-# frequency of an extinction P(s) is related to its size s by P(s) ∝ s^(-α)."""
+expected = """The power-law exponent α is 2.183±0.007, meaning the
+frequency of an extinction P(s) is related to its size s by P(s) ∝ s^(-α)."""
 
-# results, context, response = run_test(
-#   retriever,
-#   question,
-#   expected
-# )
+results, context, response = run_test(
+  retriever,
+  question,
+  expected
+)
 
-# print_scores("Specific Factual Query", results)
+print_scores("Specific Factual Query", results)
 
 # =========================================================
 # TEST: Conceptual Query - Model Mechanism
